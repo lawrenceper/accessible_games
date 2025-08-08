@@ -56,4 +56,4 @@ It's recommended to copy the accessible_games.py into your project directory for
 
 ## Contributing
 
-Please feel free to contribute to any code you wish, it's open-source. Contributors are welcome to make more games accessible to a wider audience.
+Please feel free to contribute to this code you wish, it's open-source. Contributors are welcome!
