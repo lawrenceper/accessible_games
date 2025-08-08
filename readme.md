@@ -5,12 +5,9 @@
 
 Currently, it is quite difficult to find self-voicing Games that are fully open-source. Most games rely on the older BGT framework, which is now quite old and may not run well on future Windows versions. Occasionally, Games are specifically written for one platform, and that's more commonly windows. In other cases, developers have to write their own library to make it easy to develop a game, sometimes utilizing Standard gaming libraries.
 
-
-
 It is my hope that this Python module facilitate easy creation and development of games by the open-source community. This includes individual developers, including the visually impaired, hobbyists, and developers from around the world to build amazing, open-source games for the blind. This way, a more wide range of games Will be available to visually impaired players on unique operating systems like Linux.
 
 ## Requirements
-
 
 Pygame: install with `pip install pygame`
 
@@ -25,14 +22,14 @@ espeak-NG
 ``` Python
 import accessible_games
 
-accessible_games.load()
-my_sound = accessible_games.player("my_sound.wav")
-accessible_games.speak("Press any key to play the sound."")
-accessible_games.input()
-my_sound.play()
-accessible_games.pause(5)
-my_sound.stop()
-accessible_games.exit()
+accessible_games.load() # Loacd pygame
+my_sound = accessible_games.player("my_sound.wav") # Load a sound for easy playback later
+accessible_games.speak("Press any key to play the sound.") # Speak a string using espeak-ng.
+accessible_games.input() # Wait for single-character input.
+my_sound.play() # Play the loaded sound stored in my_sound.
+accessible_games.pause(5) # Pauses execution / runtime of the game without freezing it.
+my_sound.stop() # Stops playback of the my_sound sound.
+accessible_games.exit() # quits pygame.
 ```
 
 
